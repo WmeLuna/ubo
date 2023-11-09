@@ -7,6 +7,11 @@ youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
+!yt share id
+||youtube.com^$removeparam=si
+||youtu.be^$removeparam=si
+||youtube-nocookie.com^$removeparam=si
+
 ! canvas anti-track for tests
 ||*.instructure.com/api/v1/courses/*/quizzes/*/submissions/*/events$important
 
