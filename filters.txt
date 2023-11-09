@@ -1,0 +1,15 @@
+! Title: WmeAdblock
+! Expires: 5 days
+
+! yt anti-adlock
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+
+! canvas anti-track for tests
+||*.instructure.com/api/v1/courses/*/quizzes/*/submissions/*/events$important
+
+! thingiverse extras (post-redesign, other filters havent gotten it yet)
+thingiverse.com##.ItemCardContainer__itemCard--GGbYM:has([id^="bsa"])
+thingiverse.com##.ItemCardContainer__itemCard--GGbYM:not(:has(.Avatar__avatarWrapper--kgAXo))
