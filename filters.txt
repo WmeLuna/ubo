@@ -13,3 +13,6 @@ youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 ! thingiverse extras (post-redesign, other filters havent gotten it yet)
 thingiverse.com##.ItemCardContainer__itemCard--GGbYM:has([id^="bsa"])
 thingiverse.com##.ItemCardContainer__itemCard--GGbYM:not(:has(.Avatar__avatarWrapper--kgAXo))
+
+! cults3d cleanup
+cults3d.com##[data-zone-bsa]
