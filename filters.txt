@@ -7,6 +7,12 @@ youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
+!yt antiad extras https://redd.it/17tm9rp
+! Warning: This will break push notifications
+www.youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
+www.youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+
+
 !yt share id
 ||youtube.com^$removeparam=si
 ||youtu.be^$removeparam=si
